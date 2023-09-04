@@ -1,6 +1,6 @@
 def call () {
   print (10+20)
-  sh """
+  bat """
   dir
   cat <<EOF > test.bat
   #!/bin/bash
