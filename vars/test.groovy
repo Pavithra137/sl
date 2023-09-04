@@ -2,7 +2,7 @@ def call () {
   print (10+20)
   bat """
   dir
-  cat <<EOF > test.bat
+  cat > test.bat <<EOF 
   #!/bin/bash
   dir
   mkdir new
