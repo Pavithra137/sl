@@ -21,11 +21,12 @@ def call () {
   cat <<EOF > test.sh
   #!/bin/bash
   ls
-  cat test.sh
+  df -h
 EOF
   """
   sh """
   cd new
+  cat test.sh
   sudo chmod +x test.sh
   ./test.sh
   """
