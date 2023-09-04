@@ -2,8 +2,12 @@ def call () {
   print (10+20)
   sh """
   dir
+  cat <<EOF > test.bat
+  #!/bin/bash
+  dir
   mkdir new
-  echo "hello" > test.txt
-  cat test.txt
+  cd new
+  EOF
+  test.bat
   """
 }
