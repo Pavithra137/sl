@@ -23,6 +23,6 @@ def call () {
   ls
   cat test.sh
   EOF
-  test.bat
+  ./test.sh
   """
 }
