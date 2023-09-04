@@ -16,7 +16,7 @@ def call () {
   print (10+20)
   sh """
   ls
-  mkdir new
+  mkdir -p new
   cd new
   cat > test.sh <<EOF 
   #!/bin/bash
