@@ -22,7 +22,7 @@ def call () {
   #!/bin/bash
   ls
   cat test.sh
-  EOF
+EOF
   """
   sh """
   cd new
