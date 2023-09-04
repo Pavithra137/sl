@@ -3,8 +3,8 @@ def call () {
   sh """
   ls
   mkdir new
-  echo "hello" > test.sh
-  cat test.sh
-  ./test.sh
+  echo "hello" > test.ps1
+  cat test.ps1
+  ./test.ps1
   """
 }
