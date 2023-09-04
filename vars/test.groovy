@@ -18,7 +18,7 @@ def call () {
   ls
   mkdir -p new
   cd new
-  cat > test.sh <<EOF
+  cat <<EOF > test.sh
   #!/bin/bash
   ls
   cat test.sh
