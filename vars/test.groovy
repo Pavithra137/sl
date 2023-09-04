@@ -25,6 +25,7 @@ def call () {
   EOF"""
   sh """
   cd new
+  sudo chmod +x test.sh
   ./test.sh
   """
 }
