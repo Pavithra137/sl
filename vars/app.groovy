@@ -1,6 +1,6 @@
 def checkout() {
     // Git checkout
-    checkout([$class: 'GitSCM', branches: [[name: 'main']], [[credentialsId: 'git', url: 'https://github.com/Pavithra137/dotnet-demo.git']]])        
+    checkout([$class: 'GitSCM', branches: [[name: '*/main']], [[credentialsId: 'git', url: 'https://github.com/Pavithra137/dotnet-demo.git']]])        
 }
 
 def test() {
