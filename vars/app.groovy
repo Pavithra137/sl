@@ -2,7 +2,7 @@ def checkout() {
     // Git checkout
     checkout([$class: 'GitSCM', 
               branches: [[name: '*/main']], 
-              userRemoteConfigs: [[url: 'https://github.com/Pavithra137/dotnet-demo.git', 
+              userRemoteConfigs: [[url: 'https://github.com/Pavithra137/test.git', 
               credentialsId: 'git']]])
 }
 
