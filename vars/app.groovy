@@ -1,6 +1,9 @@
 def checkout() {
     // Git checkout
-    checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'git', url: 'https://github.com/Pavithra137/dotnet-demo.git']]])        
+    checkout([$class: 'GitSCM', 
+              branches: [[name: '*/main']], 
+              userRemoteConfigs: [[url: 'https://github.com/Pavithra137/dotnet-demo.git', 
+              credentialsId: 'git']]])
 }
 
 def test() {
